@@ -1,0 +1,142 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding: 70px;
+}
+
+/* text-section */
+.text-content {
+  padding: 30px;
+}
+
+.text-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.1;
+}
+
+.text-content p {
+  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+}
+
+/* form-section */
+.form-content {
+  border-radius: 8px;
+  padding: 0 50px;
+}
+
+.cta {
+  font-size: 15px;
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-content .cta a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px hsl(246, 25%, 77%);
+}
+
+.form-group input {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid hsl(246, 25%, 77%);
+  outline: none;
+}
+
+.form-button {
+  font-size: 17px;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-content p {
+  font-size: 12px;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+}
+
+.form-content form p a {
+  color: hsl(0, 100%, 74%) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    padding: 40px;
+  }
+
+  /* text-section */
+  .text-content {
+    padding: 0;
+    text-align: center;
+  }
+  .text-content h1 {
+    font-size: 30px;
+  }
+
+  /* form-section */
+  .form-content {
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .cta {
+    margin: 30px 0;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .form-group input {
+    padding: 15px 20px;
+  }
+
+  .form-button {
+    font-size: 13px;
+  }
+
+  .form-content p {
+    font-size: 14px;
+  }
+
